@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  db:
+    container_name: prestamista_database
+    image: postgres:16.2
+    environment:
+      POSTGRES_DB: prestamista_db
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: m4rc3l0_prestamista_admin
+    ports:
+      - "5432:5432"
